@@ -23,8 +23,7 @@ function(add_task_solution TargetName)
         Install_${PROJECT_NAME}
         ${TargetName}
     )
-    
+
     install(TARGETS ${TargetName} DESTINATION bin/${TargetName})
     install(FILES ${CMAKE_BINARY_DIR}/${TargetName}.map DESTINATION bin/${TargetName})
 endfunction(add_task_solution TargetName)
-
