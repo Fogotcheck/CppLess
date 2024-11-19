@@ -13,21 +13,16 @@ void TransposMatrices(uint32_t **array, size_t rows, size_t cols);
 int main(void)
 {
 	cout << "Program for transposing matrices." << endl;
-	uint32_t **array = new uint32_t *[ROWS];
-	if (array == NULL) {
-		return -1;
-	}
-
-	for (size_t i = 0; i < ROWS; i++) {
-		array[i] = new uint32_t[COLS];
-		if (array[i] == NULL) {
-			while (i) {
-				i--;
-				delete[] array[i];
-			}
-			delete[] array;
-			return -1;
+	uint32_t **array = nullptr;
+	try {
+		// Динамическое выделение памяти для матрицы
+		array = new uint32_t *[ROWS];
+		for (size_t i = 0; i < ROWS; i++) {
+			array[i] = new uint32_t[COLS];
 		}
+	} catch (const bad_alloc &e) {
+		cerr << "Memory allocation failed: " << e.what() << endl;
+		return -1;
 	}
 
 	FillArrRandomNum(array, ROWS, COLS);
