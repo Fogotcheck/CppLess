@@ -4,3 +4,4 @@ add_library(${TaskName}Lib INTERFACE)
 
 add_subdirectory(MyQueue)
 add_subdirectory(MyList)
+add_subdirectory(MyStruct)
