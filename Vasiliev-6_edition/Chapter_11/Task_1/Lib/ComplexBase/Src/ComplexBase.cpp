@@ -40,3 +40,12 @@ std::ostream &operator<<(std::ostream &os, const ComplexBase &c)
 	   << "i)";
 	return os;
 }
+
+void ComplexBase::SetReal(double real)
+{
+	this->real = real;
+}
+void ComplexBase::SetImag(double imag)
+{
+	this->imag = imag;
+}

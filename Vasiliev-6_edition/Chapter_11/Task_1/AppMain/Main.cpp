@@ -10,5 +10,11 @@ int main()
 	ComplexDervid sum = a + b;
 	cout << sum << "\tmodulus::" << sum.GetModulus()
 	     << "\tcomplex conjugate number::" << sum.GetСonjugate() << endl;
+
+	ComplexDervid tmp(1.2, -2);
+	tmp.SetImag(2);
+
+	cout << tmp << endl;
+
 	return 0;
 }

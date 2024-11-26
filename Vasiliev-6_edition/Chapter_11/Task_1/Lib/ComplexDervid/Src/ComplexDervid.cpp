@@ -19,3 +19,12 @@ ComplexBase ComplexDervid::GetСonjugate(void)
 {
 	return ComplexBase(this->real, (this->imag * (-1)));
 }
+
+void ComplexDervid::SetReal(double real, double base)
+{
+	this->real = real + base;
+}
+void ComplexDervid::SetImag(double imag, double base)
+{
+	this->imag = imag + base;
+}
