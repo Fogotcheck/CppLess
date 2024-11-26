@@ -20,11 +20,11 @@ ComplexBase ComplexDervid::GetСonjugate(void)
 	return ComplexBase(this->real, (this->imag * (-1)));
 }
 
-void ComplexDervid::SetReal(double real, double base)
+void ComplexDervid::SetReal(double real, double offset)
 {
-	this->real = real + base;
+	this->real = real + offset;
 }
-void ComplexDervid::SetImag(double imag, double base)
+void ComplexDervid::SetImag(double imag, double offset)
 {
-	this->imag = imag + base;
+	this->imag = imag + offset;
 }
