@@ -11,7 +11,7 @@ int main()
 	cout << sum << "\tmodulus::" << sum.GetModulus()
 	     << "\tcomplex conjugate number::" << sum.GetСonjugate() << endl;
 
-	ComplexDervid tmp(1.2, -2);
+	ComplexDervid tmp(1.2);
 	tmp.SetImag(2);
 
 	cout << tmp << endl;

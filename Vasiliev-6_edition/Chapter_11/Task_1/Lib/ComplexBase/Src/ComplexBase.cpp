@@ -5,10 +5,6 @@ ComplexBase::ComplexBase(double real, double imag)
 	, imag(imag)
 {
 }
-ComplexBase::ComplexBase(const ComplexBase &other)
-{
-	*this = other;
-}
 
 ComplexBase ComplexBase::operator+(const ComplexBase &other) const
 {
