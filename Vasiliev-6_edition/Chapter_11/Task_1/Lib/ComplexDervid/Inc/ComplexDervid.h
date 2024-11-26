@@ -6,5 +6,5 @@ class ComplexDervid : public ComplexBase {
 	ComplexDervid(double real, double imag);
 	ComplexDervid(const ComplexBase &other);
 	double GetModulus(void);
-	ComplexDervid GetСonjugate(void);
+	ComplexBase GetСonjugate(void);
 };
